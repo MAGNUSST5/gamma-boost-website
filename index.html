@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GammaBoost+ — See What They Can't · Available on Steam</title>
+  <meta name="description" content="The #1 gamma control tool for competitive players. 8 presets, 12 precision sliders, per-game profiles, OBS sync. Available on Steam.">
+  <meta name="theme-color" content="#0a0a0c">
+  <meta name="author" content="GammaBoost+">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical + sharing -->
+  <link rel="canonical" href="https://gamma-boost.com/">
+  <meta property="og:url" content="https://gamma-boost.com/">
+  <meta property="og:site_name" content="GammaBoost+">
+  <meta property="og:title" content="GammaBoost+ — See What They Can't">
+  <meta property="og:description" content="The #1 gamma control tool for competitive players. 8 presets, 12 fine-tune sliders, per-game profiles, OBS sync. Now on Steam.">
+  <meta property="og:image" content="https://gamma-boost.com/assets/thumbnail.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="GammaBoost+ — see what they can't">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GammaBoost+ — See What They Can't">
+  <meta name="twitter:description" content="The #1 gamma control tool for competitive players. On Steam now.">
+  <meta name="twitter:image" content="https://gamma-boost.com/assets/thumbnail.png">
+
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+
+  <!-- Structured data: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "GammaBoost+",
+    "alternateName": "GammaBoost Plus",
+    "description": "Gamma-control tool for competitive PC players. 8 one-click presets, 12 precision sliders, per-game auto-profiles, global hotkey, OBS WebSocket sync, .cube LUT export. Operates at the OS display level — anti-cheat friendly.",
+    "applicationCategory": "UtilityApplication",
+    "applicationSubCategory": "DisplayUtility",
+    "operatingSystem": "Windows 10, Windows 11",
+    "url": "https://gamma-boost.com/",
+    "image": "https://gamma-boost.com/assets/thumbnail.png",
+    "softwareVersion": "1.0.0",
+    "fileSize": "200 MB",
+    "inLanguage": ["en", "es", "fr", "de", "pt", "ja", "zh-CN", "ko", "ru", "tr"],
+    "downloadUrl": "https://store.steampowered.com/app/4601350/GammaBoost_plus/",
+    "installUrl": "https://store.steampowered.com/app/4601350/GammaBoost_plus/",
+    "releaseNotes": "https://store.steampowered.com/app/4601350/GammaBoost_plus/",
+    "featureList": [
+      "8 optimized gamma presets",
+      "12 precision sliders with real-time tone curve",
+      "Global hotkey toggle",
+      "Per-game auto-profiles",
+      "OBS WebSocket sync",
+      ".cube LUT export",
+      "Multi-monitor support",
+      "Steam Cloud sync"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://store.steampowered.com/app/4601350/GammaBoost_plus/",
+      "price": "4.99",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "category": "Steam"
+    },
+    "brand": {
+      "@type": "Brand",
+      "name": "GammaBoost+"
+    }
+  }
+  </script>
+
+  <!-- Organization (lightweight) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "GammaBoost+",
+    "url": "https://gamma-boost.com/",
+    "logo": "https://gamma-boost.com/assets/logo.svg",
+    "sameAs": [
+      "https://store.steampowered.com/app/4601350/GammaBoost_plus/",
+      "https://discord.gg/tKrC9PwJsM"
+    ]
+  }
+  </script>
+
+  <!-- FAQ schema mirrors the visible FAQ section -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is it safe for games with anti-cheat?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. GammaBoost+ calls the standard Windows gamma ramp API — the same path the OS Night Light feature uses. No kernel drivers, no process injection, no overlay hooks, no game-memory access. It operates strictly at the display-pipeline level."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which games does it work with?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Every game. Because the boost is applied at the OS level, every pixel reaching your monitor goes through it — regardless of engine, fullscreen mode, or anti-cheat system."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the system requirements?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Windows 10 or 11 (64-bit). Any modern GPU. 200 MB of storage. Steam required for achievements, cloud sync, and community configs — core gamma features work without it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use it while streaming on OBS?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. GammaBoost+ connects to OBS via WebSocket and applies a matching color filter so viewers see the same boosted image. Export .cube LUTs for DaVinci, Premiere, or any NLE."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What languages are supported?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ten: English, Spanish, French, German, Portuguese, Japanese, Simplified Chinese, Korean, Russian, and Turkish."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does it work with multiple monitors?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Pick which display to adjust, or apply globally. Works with ultrawides and mixed-refresh-rate setups — anything that exposes a standard gamma ramp."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.webgpu.min.js",
+      "three/webgpu": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.webgpu.min.js",
+      "three/tsl": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.webgpu.min.js"
+    }
+  }
+  </script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">
+      <img src="assets/logo.svg" alt="" class="nav-logo">
+      <span>Gamma<span class="orange">Boost+</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#showcase">Showcase</a>
+      <a href="#how">How it works</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://discord.gg/tKrC9PwJsM" target="_blank" rel="noopener">Discord</a>
+    </div>
+    <a href="https://store.steampowered.com/app/4601350/GammaBoost_plus/" class="nav-cta">
+      <svg class="steam-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.41-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/></svg>
+      Get on Steam
+    </a>
+  </div>
+</nav>
+
+<main>
+
+<!-- HERO + LIVE DEMO -->
+<section class="hero" id="top">
+  <canvas id="hero-canvas" aria-label="Live product demo — dark 3D scene"></canvas>
+
+  <!-- Readability gradient so text stays legible over any scene brightness -->
+  <div class="hero-scrim" aria-hidden="true"></div>
+
+  <!-- HUD -->
+  <div class="hero-hud" aria-hidden="true">
+    <div class="hud-corner tl"></div>
+    <div class="hud-corner tr"></div>
+    <div class="hud-corner bl"></div>
+    <div class="hud-corner br"></div>
+    <div class="hud-readout hud-tl-r">
+      <span class="hud-dot"></span>LIVE · <span id="scene-name">FOREST</span>
+    </div>
+    <div class="hud-readout hud-tr-r">
+      GAMMA <strong id="gamma-val">1.00</strong>
+    </div>
+    <div class="hud-readout hud-bl-r">CAM 01 · FOV 42°</div>
+    <div class="hud-readout hud-br-r">CONTACTS <span id="contact-val">?</span></div>
+  </div>
+
+  <!-- Scene picker -->
+  <div class="scene-picker" role="tablist" aria-label="Demo environment">
+    <button class="scene-tab active" data-scene="forest" role="tab" aria-selected="true">
+      <span class="scene-tab-num">01</span>
+      <span class="scene-tab-label">Forest</span>
+    </button>
+    <button class="scene-tab" data-scene="urban" role="tab" aria-selected="false">
+      <span class="scene-tab-num">02</span>
+      <span class="scene-tab-label">Urban</span>
+    </button>
+    <button class="scene-tab" data-scene="bunker" role="tab" aria-selected="false">
+      <span class="scene-tab-num">03</span>
+      <span class="scene-tab-label">Bunker</span>
+    </button>
+  </div>
+
+  <!-- Hero text overlay -->
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Available now on Steam
+    </div>
+    <h1 class="hero-title">See what they <span class="orange">can't.</span></h1>
+    <p class="hero-subtitle">
+      The gamma control tool competitive players run when the game goes dark. Eight one-click presets, twelve precision sliders, per-game auto-profiles, and a global hotkey — all rendered live behind this text by the same math the app runs on your desktop.
+    </p>
+    <div class="hero-cta">
+      <a href="https://store.steampowered.com/app/4601350/GammaBoost_plus/" class="btn btn-primary">
+        <svg class="steam-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.41-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/></svg>
+        Get on Steam
+      </a>
+      <a href="#demo-controls" class="btn btn-ghost">
+        Try it below
+        <span class="btn-arrow">↓</span>
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><strong>8</strong><span>Presets</span></div>
+      <div class="stat"><strong>12</strong><span>Sliders</span></div>
+      <div class="stat"><strong>10</strong><span>Languages</span></div>
+      <div class="stat"><strong>∞</strong><span>Configs</span></div>
+    </div>
+  </div>
+
+  <!-- Interactive controls -->
+  <div class="hero-controls" id="demo-controls">
+    <div class="controls-label">
+      <span class="label-arrow">▸</span>
+      <span>Drag the slider — live on your GPU</span>
+    </div>
+    <div class="slider-wrapper">
+      <span class="slider-caption">Dark</span>
+      <div class="slider-inner">
+        <input type="range" id="gamma-slider" min="0.5" max="2.6" step="0.01" value="1.0" aria-label="Gamma">
+      </div>
+      <span class="slider-caption">Bright</span>
+    </div>
+    <div class="preset-row" role="radiogroup" aria-label="Gamma presets">
+      <button class="preset-btn active" data-gamma="1.0" role="radio" aria-checked="true">Off</button>
+      <button class="preset-btn" data-gamma="1.3" role="radio">Shadow Boost</button>
+      <button class="preset-btn" data-gamma="1.7" role="radio">Extraction</button>
+      <button class="preset-btn" data-gamma="2.1" role="radio">Night Ops</button>
+      <button class="preset-btn" data-gamma="2.5" role="radio">Max</button>
+    </div>
+  </div>
+
+  <!-- Fallback -->
+  <div class="hero-fallback" id="hero-fallback" style="display:none;">
+    <div>
+      <strong>WebGPU unavailable</strong>
+      <p>This live demo needs Chrome/Edge 113+ or Safari 18+. The rest of the site works everywhere.</p>
+    </div>
+  </div>
+
+  <!-- Loading -->
+  <div class="hero-loading" id="hero-loading">
+    <div class="loading-bar"></div>
+    <span>Booting render pipeline</span>
+  </div>
+
+  <!-- Scroll hint -->
+  <div class="hero-scroll" aria-hidden="true">
+    <span>Scroll</span>
+    <span class="scroll-line"></span>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Features</div>
+      <h2 class="section-title">Built for players who look into the dark.</h2>
+      <p class="section-sub">Every feature is shipped. No roadmap asterisks.</p>
+    </div>
+
+    <div class="features-grid">
+      <!-- Hero card: 8 presets with visual swatches -->
+      <article class="feature-card feature-card-hero">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 10v6M4.22 4.22l4.24 4.24m7.08 7.08l4.24 4.24M1 12h6m10 0h6M4.22 19.78l4.24-4.24m7.08-7.08l4.24-4.24"/></svg>
+        </div>
+        <h3>8 Optimized Presets</h3>
+        <p>One-click gamma profiles tuned by competitive players across a dozen titles. Tap a swatch to apply it.</p>
+        <div class="preset-swatches">
+          <button class="swatch" data-gamma="1.3" style="background:linear-gradient(135deg,#4a3220,#a06818)"><span>High Contrast</span></button>
+          <button class="swatch" data-gamma="1.45" style="background:linear-gradient(135deg,#3a2812,#9b5418)"><span>Shadow Boost</span></button>
+          <button class="swatch" data-gamma="1.55" style="background:linear-gradient(135deg,#1a2a14,#4c8235)"><span>Forest Ops</span></button>
+          <button class="swatch" data-gamma="1.65" style="background:linear-gradient(135deg,#3e2012,#b04818)"><span>Extraction</span></button>
+          <button class="swatch" data-gamma="1.8" style="background:linear-gradient(135deg,#1c2838,#3a6a9e)"><span>Cool Boost</span></button>
+          <button class="swatch" data-gamma="1.9" style="background:linear-gradient(135deg,#3a2010,#c0701e)"><span>Warm Boost</span></button>
+          <button class="swatch" data-gamma="2.1" style="background:linear-gradient(135deg,#1a1026,#463070)"><span>Night Mode</span></button>
+          <button class="swatch" data-gamma="2.3" style="background:linear-gradient(135deg,#333538,#c8c4bc)"><span>Soft White</span></button>
+        </div>
+      </article>
+
+      <!-- Wide: 12 sliders -->
+      <article class="feature-card feature-card-wide">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/><circle cx="7" cy="6" r="2" fill="currentColor" stroke="none"/><circle cx="15" cy="12" r="2" fill="currentColor" stroke="none"/><circle cx="10" cy="18" r="2" fill="currentColor" stroke="none"/></svg>
+        </div>
+        <h3>12 Precision Sliders</h3>
+        <p>Gamma, brightness, contrast, per-channel RGB, vibrance, temperature, tint, black level, highlights, and a real-time tone-curve editor.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2h8l4 6-8 14-8-14z"/><path d="M4 8h16"/><path d="M12 22V8"/></svg>
+        </div>
+        <h3>Instant Hotkey</h3>
+        <p>Bind on/off to any key. Zero input delay.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 9h20"/><circle cx="6" cy="6.5" r="0.5" fill="currentColor"/></svg>
+        </div>
+        <h3>Per-Game Profiles</h3>
+        <p>Auto-applies the right preset on game launch.</p>
+      </article>
+
+      <!-- Wide: OBS -->
+      <article class="feature-card feature-card-wide">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 12h8m-4-4v8"/></svg>
+        </div>
+        <h3>OBS + LUT Export</h3>
+        <p>WebSocket sync to OBS so viewers see what you see. Export .cube LUTs for DaVinci, Premiere, or any NLE.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <h3>Community Configs</h3>
+        <p>Browse, upvote, one-click download.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="2" y="3" width="8" height="18" rx="1"/><rect x="14" y="3" width="8" height="18" rx="1"/></svg>
+        </div>
+        <h3>Multi-Monitor Aware</h3>
+        <p>Pick a display or apply globally. Ultrawides supported.</p>
+      </article>
+
+      <!-- Full-width safety band -->
+      <article class="feature-card feature-card-safe">
+        <div class="feature-safe-header">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <div>
+            <div class="safe-badge">SAFE BY DESIGN</div>
+            <h3>Anti-cheat friendly at the OS level.</h3>
+          </div>
+        </div>
+        <div class="feature-safe-body">
+          <p>Calls the standard Windows gamma-ramp API — the same path the OS Night Light feature uses. No kernel drivers, no process injection, no overlay hooks, no game-memory access.</p>
+          <ul class="safe-checks">
+            <li><span class="check">✓</span>No kernel</li>
+            <li><span class="check">✓</span>No injection</li>
+            <li><span class="check">✓</span>No overlay</li>
+            <li><span class="check">✓</span>OS-level only</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SHOWCASE (app UI) -->
+<section class="showcase" id="showcase">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Inside the app</div>
+      <h2 class="section-title">A control room, not a settings menu.</h2>
+    </div>
+
+    <div class="showcase-grid">
+      <figure class="showcase-item">
+        <div class="showcase-frame">
+          <div class="window-chrome">
+            <span class="window-dots"><span></span><span></span><span></span></span>
+            <span class="window-title">GammaBoost+ · Presets</span>
+          </div>
+          <img src="assets/screenshot_presets.png" alt="Preset selector screen" loading="lazy">
+        </div>
+        <figcaption>
+          <span class="figcap-num">01</span>
+          <div>
+            <h4>Ready-made presets</h4>
+            <p>Eight scenarios tuned by players who live in the shadows.</p>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="showcase-item showcase-item-feature">
+        <div class="showcase-frame">
+          <div class="window-chrome">
+            <span class="window-dots"><span></span><span></span><span></span></span>
+            <span class="window-title">GammaBoost+ · Manual</span>
+            <span class="window-dot-live"></span>
+          </div>
+          <img src="assets/screenshot_manual.png" alt="Manual controls screen" loading="lazy">
+        </div>
+        <figcaption>
+          <span class="figcap-num">02</span>
+          <div>
+            <h4>Fine-tune every parameter</h4>
+            <p>Twelve sliders. Real-time tone-curve editor. Nothing hidden.</p>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="showcase-item">
+        <div class="showcase-frame">
+          <div class="window-chrome">
+            <span class="window-dots"><span></span><span></span><span></span></span>
+            <span class="window-title">GammaBoost+ · Configs</span>
+          </div>
+          <img src="assets/screenshot_saved.png" alt="Saved configurations screen" loading="lazy">
+        </div>
+        <figcaption>
+          <span class="figcap-num">03</span>
+          <div>
+            <h4>Save &amp; sync configs</h4>
+            <p>Label them. Share them. Follow them through Steam Cloud.</p>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Three steps</div>
+      <h2 class="section-title">Plug in, tune, play.</h2>
+    </div>
+
+    <div class="how-grid">
+      <article class="how-step">
+        <div class="how-step-top">
+          <div class="how-num">01</div>
+          <div class="how-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+              <rect x="6" y="18" width="36" height="4" rx="2" opacity="0.35"/>
+              <rect x="6" y="28" width="36" height="4" rx="2" opacity="0.35"/>
+              <circle cx="18" cy="20" r="5" fill="currentColor" stroke="none"/>
+              <circle cx="32" cy="30" r="5" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
+        </div>
+        <h3>Tune</h3>
+        <p>Launch GammaBoost+. Pick a preset or dial in your own across twelve sliders. Preview updates live.</p>
+      </article>
+
+      <article class="how-step">
+        <div class="how-step-top">
+          <div class="how-num">02</div>
+          <div class="how-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="6" y="14" width="36" height="20" rx="3"/>
+              <rect x="11" y="20" width="4" height="4" rx="0.8" fill="currentColor"/>
+              <rect x="17" y="20" width="4" height="4" rx="0.8" opacity="0.35" fill="currentColor"/>
+              <rect x="23" y="20" width="4" height="4" rx="0.8" opacity="0.35" fill="currentColor"/>
+              <rect x="29" y="20" width="4" height="4" rx="0.8" opacity="0.35" fill="currentColor"/>
+              <rect x="14" y="26" width="20" height="4" rx="0.8" fill="currentColor"/>
+            </svg>
+          </div>
+        </div>
+        <h3>Bind</h3>
+        <p>Assign the toggle to any hotkey. Link per-game profiles that auto-apply on launch.</p>
+      </article>
+
+      <article class="how-step">
+        <div class="how-step-top">
+          <div class="how-num">03</div>
+          <div class="how-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M24 6v10m0 16v10m-18-18h10m16 0h10" opacity="0.35"/>
+              <circle cx="24" cy="24" r="10"/>
+              <path d="M21 20v8l7-4z" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
+        </div>
+        <h3>Play</h3>
+        <p>Push the key mid-fight. GammaBoost+ writes directly to the Windows gamma ramp — no overlay, no injection.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- BIG STEAM CTA -->
+<section class="big-cta">
+  <div class="container">
+    <div class="big-cta-card">
+      <div class="big-cta-glow" aria-hidden="true"></div>
+      <div class="big-cta-eyebrow">
+        <span class="badge-dot"></span>
+        Available now on Steam
+      </div>
+      <h2 class="big-cta-title">Stop squinting.<br>Start <span class="orange">seeing.</span></h2>
+      <p class="big-cta-sub">Works with every game on Windows 10 and 11.</p>
+      <div class="big-cta-price">
+        <span class="price-amount">$4.99</span>
+        <span class="price-label">one-time purchase &middot; lifetime updates</span>
+      </div>
+      <a href="https://store.steampowered.com/app/4601350/GammaBoost_plus/" class="btn btn-primary btn-huge">
+        <svg class="steam-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.41-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/></svg>
+        Get GammaBoost+ on Steam
+      </a>
+      <div class="big-cta-trust">
+        <span>Windows 10 / 11</span>
+        <span class="dot-sep">·</span>
+        <span>200 MB</span>
+        <span class="dot-sep">·</span>
+        <span>10 languages</span>
+        <span class="dot-sep">·</span>
+        <span>Not affiliated with any publisher</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">FAQ</div>
+      <h2 class="section-title">Common questions.</h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Is it safe for games with anti-cheat?</summary>
+        <p>Yes. GammaBoost+ calls the standard Windows gamma ramp API — the same path the OS Night Light feature uses. No kernel drivers, no process injection, no overlay hooks, no game-memory access. It operates strictly at the display-pipeline level.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Which games does it work with?</summary>
+        <p>Every game. Because the boost is applied at the OS level, every pixel reaching your monitor goes through it — regardless of engine, fullscreen mode, or anti-cheat system.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What are the system requirements?</summary>
+        <p>Windows 10 or 11 (64-bit). Any modern GPU. 200 MB of storage. Steam required for achievements, cloud sync, and community configs — core gamma features work without it.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can I use it while streaming on OBS?</summary>
+        <p>Yes. GammaBoost+ connects to OBS via WebSocket and applies a matching color filter so viewers see the same boosted image. Export .cube LUTs for DaVinci, Premiere, or any NLE.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What languages are supported?</summary>
+        <p>Ten: English, Spanish, French, German, Portuguese, Japanese, Simplified Chinese, Korean, Russian, and Turkish.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Does it work with multiple monitors?</summary>
+        <p>Yes. Pick which display to adjust, or apply globally. Works with ultrawides and mixed-refresh-rate setups — anything that exposes a standard gamma ramp.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <a href="#top" class="footer-brand">
+        <img src="assets/logo.svg" alt="" class="footer-logo">
+        <div>
+          <div class="footer-name">Gamma<span class="orange">Boost+</span></div>
+          <div class="footer-tagline">See what they can't.</div>
+        </div>
+      </a>
+      <div class="footer-links">
+        <a href="#features">Features</a>
+        <a href="#showcase">Showcase</a>
+        <a href="#how">How it works</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://discord.gg/tKrC9PwJsM" target="_blank" rel="noopener">Discord</a>
+        <a href="https://store.steampowered.com/app/4601350/GammaBoost_plus/">Steam</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 GammaBoost+. All rights reserved.</div>
+      <div>Windows utility for gamers. Not affiliated with any game publisher.</div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script type="module" src="webgpu.js"></script>
+</body>
+</html>
